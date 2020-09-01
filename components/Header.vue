@@ -38,11 +38,13 @@
                   Menu open: "block", Menu closed: "hidden"
                 -->
                 <div v-show="showMenu" class="lg:hidden">
-                    <div class="px-2 pt-2 pb-3 lg:flex">
-                        <nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/">Home</nuxt-link>
-                        <nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/about">About</nuxt-link>
-                        <nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/services">Services</nuxt-link>
-                        <nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/contact">Contact</nuxt-link>
+                    <div class="px-2 pt-2 pb-3">
+                        <ul>
+                            <li v-on:click="toggleMenu"><nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/">Home</nuxt-link></li>
+                            <li v-on:click="toggleMenu"><nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/about">About</nuxt-link></li>
+                            <li v-on:click="toggleMenu"> <nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/services">Services</nuxt-link></li>
+                            <li v-on:click="toggleMenu"><nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/contact">Contact</nuxt-link></li>
+                        </ul>
                         <div class="flex mt-4">
                             <a target="_blank" href="" class="inline-block h-6 w-6 ml-4 mr-4 opacity-50 hover:opacity-100">
                                 <img src="~/assets/images/facebook.svg" alt="Brinks Piano Work On Facebook" />
@@ -65,5 +67,10 @@ export default {
             showMenu: false,
         };
     },
+    methods: {
+        toggleMenu: function(){
+            this.showMenu = false;
+        }
+    }
 }
 </script>

@@ -29,7 +29,7 @@
                         <nuxt-link class="font-bold font-serif text-gray-600 hover:text-black text-lg ml-5 mr-5" to="/">Home</nuxt-link>
                         <nuxt-link class="font-bold font-serif text-gray-600 hover:text-black text-lg ml-5 mr-5" to="/about">About</nuxt-link>
                         <nuxt-link class="font-bold font-serif text-gray-600 hover:text-black text-lg ml-5 mr-5" to="/services">Services</nuxt-link>
-                        <nuxt-link class="font-bold font-serif text-gray-600 hover:text-black text-lg ml-5 mr-5" to="/contact">Contact</nuxt-link>
+                        <a class="font-bold font-serif text-gray-600 hover:text-black text-lg ml-5 mr-5" href="/contact">Contact</a>
                     </div>
                 </div>
                 <!--
@@ -43,7 +43,7 @@
                             <li v-on:click="toggleMenu"><nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/">Home</nuxt-link></li>
                             <li v-on:click="toggleMenu"><nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/about">About</nuxt-link></li>
                             <li v-on:click="toggleMenu"> <nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/services">Services</nuxt-link></li>
-                            <li v-on:click="toggleMenu"><nuxt-link class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" to="/contact">Contact</nuxt-link></li>
+                            <li v-on:click="toggleMenu"><a class="font-bold font-serif block px-3 py-2 rounded-md text-base text-gray-600 hover:text-white hover:bg-gray-900 font-medium focus:outline-none focus:text-white focus:bg-gray-900 transition duration-150 ease-in-out" href="/contact">Contact</a></li>
                         </ul>
                         <div class="flex mt-4">
                             <a target="_blank" href="" class="inline-block h-6 w-6 ml-4 mr-4 opacity-50 hover:opacity-100">

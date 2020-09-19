@@ -17,29 +17,29 @@
             <div class="hidden lg:w-1/2 lg:block lg:bg-cover lg:bg-no-repeat lg:bg-center lg:min-h-full" :style="{ backgroundImage: `url(${piano})` }"></div>
         </div>
 
-        <div class="bg-gray-900 text-white py-10 px-6 lg:py-16">
-            <div class="container mx-auto">
-                <h2 class="text-center text-3xl lg:text-5xl font-serif font-bold">Our Services</h2>
-            </div>
-        </div>
+        <ContentBackground>
+            <Container>
+                <H2 class="text-center">Our Services</H2>
+            </Container>
+        </ContentBackground>
 
         <div class="px-6 py-10 lg:py-16">
             <div class="container mx-auto">
                 <div class="lg:flex">
                     <div class="mb-12 lg:mb-0 lg:px-4">
-                        <h3 class="font-serif text-xl font-bold mb-4">Piano Tunings</h3>
-                        <p>Your piano needs tuning a couple times a year to keep it in the shape it was meant to be played in.</p>
-                        <nuxt-link to="/services" class="inline-block mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-serif">Learn more</nuxt-link>
+                        <h3 class="font-serif text-xl font-bold mb-4">Pianos</h3>
+                        <p>We offer a wide variety of piano services, from tuning, to string replacements, to Grand Piano Regulation.</p>
+                        <nuxt-link to="/services#piano" class="inline-block mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-serif">Learn more</nuxt-link>
                     </div>
                     <div class="mb-12 lg:mb-0 lg:px-4">
                         <h3 class="font-serif text-xl font-bold mb-4">Instrument Set Ups</h3>
                         <p>From violins to guitars, and all in between, we pride ourselves in our ability to set up your instruments.</p>
-                        <nuxt-link to="/services" class="inline-block mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-serif">Learn more</nuxt-link>
+                        <nuxt-link to="/services#other" class="inline-block mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-serif">Learn more</nuxt-link>
                     </div>
                     <div class="mb-12 lg:mb-0 lg:px-4">
                         <h3 class="font-serif text-xl font-bold mb-4">Instrument Repairs</h3>
                         <p>Pianos, guitars, you name it! Brinks Piano Works can repair your instrument.</p>
-                        <nuxt-link to="/services" class="inline-block mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-serif">Learn more</nuxt-link>
+                        <nuxt-link to="/services#other" class="inline-block mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-serif">Learn more</nuxt-link>
                     </div>
                 </div>
             </div>

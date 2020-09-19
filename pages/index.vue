@@ -10,9 +10,9 @@
                 </div>
                 <div class="flex justify-center lg:justify-start mt-5 mb-5">
                     <nuxt-link to="/services" class="mr-5 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-serif">Our Services</nuxt-link>
-                    <a href="" class="bg-transparent hover:bg-black hover:text-white text-black font-bold py-2 px-4 rounded font-serif">About Us</a>
+                    <nuxt-link to="/about" class="bg-transparent hover:bg-black hover:text-white text-black font-bold py-2 px-4 rounded font-serif">About Us</nuxt-link>
                 </div>
-                <img class="mt-10 lg:hidden" src="~/assets/images/piano2.jpg" alt="Piano" />
+                <img class="mt-10 lg:hidden" :src="piano" alt="Piano" />
             </div>
             <div class="hidden lg:w-1/2 lg:block lg:bg-cover lg:bg-no-repeat lg:bg-center lg:min-h-full" :style="{ backgroundImage: `url(${piano})` }"></div>
         </div>
@@ -28,33 +28,43 @@
                 <div class="lg:flex">
                     <div class="mb-12 lg:mb-0 lg:px-4">
                         <h3 class="font-serif text-xl font-bold mb-4">Piano Tunings</h3>
-                        <p>We tune pianos. We tune pianos. We tune pianos. We tune pianos. </p>
+                        <p>Your piano needs tuning a couple times a year to keep it in the shape it was meant to be played in.</p>
                         <nuxt-link to="/services" class="inline-block mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-serif">Learn more</nuxt-link>
                     </div>
                     <div class="mb-12 lg:mb-0 lg:px-4">
                         <h3 class="font-serif text-xl font-bold mb-4">Instrument Set Ups</h3>
-                        <p>We tune pianos. We tune pianos. We tune pianos. We tune pianos. </p>
+                        <p>From violins to guitars, and all in between, we pride ourselves in our ability to set up your instruments.</p>
                         <nuxt-link to="/services" class="inline-block mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-serif">Learn more</nuxt-link>
                     </div>
                     <div class="mb-12 lg:mb-0 lg:px-4">
-                        <h3 class="font-serif text-xl font-bold mb-4">Piano Tunings</h3>
-                        <p>We tune pianos. We tune pianos. We tune pianos. We tune pianos. </p>
+                        <h3 class="font-serif text-xl font-bold mb-4">Instrument Repairs</h3>
+                        <p>Pianos, guitars, you name it! Brinks Piano Works can repair your instrument.</p>
                         <nuxt-link to="/services" class="inline-block mt-3 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-serif">Learn more</nuxt-link>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="bg-cover bg-no-repeat bg-center h-64 lg:h-50" :style="{ backgroundImage: `url(${piano})` }"></div>
+        <div class="lg:flex">
+            <div class="lg:w-1/3 h-50 bg-center bg-cover bg-no-repeat" :style="{ backgroundImage: `url(${piano2})` }"></div>
+            <div class="lg:w-1/3 h-50 bg-center bg-cover bg-no-repeat" :style="{ backgroundImage: `url(${piano3})` }"></div>
+            <div class="lg:w-1/3 h-50 bg-center bg-cover bg-no-repeat" :style="{ backgroundImage: `url(${piano4})` }"></div>
+        </div>
     </div>
 </template>
 
 <script>
-import piano from '~/assets/images/piano2.jpg';
+import piano from '~/assets/images/piano.jpg';
+import piano2 from '~/assets/images/piano3.jpg';
+import piano3 from '~/assets/images/piano-with-antlers.jpg';
+import piano4 from '~/assets/images/keys.jpg';
 export default {
     data() {
         return {
             piano,
+            piano2,
+            piano3,
+            piano4,
         }
     }
 }

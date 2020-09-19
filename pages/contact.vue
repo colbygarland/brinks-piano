@@ -5,7 +5,10 @@
             <div class="prose">
                 <p>Looking to get your piano tuned or repaired? Have an old guitar lying around you want fixed?</p>
             </div>
-            <form class="mt-10" netlify data-netlify-recaptcha="true">
+            <form class="mt-10" netlify netlify-honeypot="bot-field">
+                <div class="hidden">
+                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                </div>
                 <div class="mb-6">
                     <label class="font-bold text-sm block mb-1" for="name">Name<span class="text-red-600">*</span></label>
                     <input placeholder="Full name" id="name" name="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
@@ -17,9 +20,6 @@
                 <div class="mb-6">
                     <label class="font-bold text-sm block mb-1" for="message">Message<span class="text-red-600">*</span></label>
                     <textarea placeholder="Enter message" id="message" name="message" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
-                </div>
-                <div class="mb-6">
-                    <div data-netlify-recaptcha="true"></div>
                 </div>
                 <div class="mb-6">
                     <button type="submit" class="mr-5 bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-serif">Submit</button>

@@ -4,6 +4,9 @@
             <H1>Contact</H1>
             <div class="prose">
                 <p>Looking to get your piano tuned or repaired? Have an old guitar lying around you want fixed?</p>
+                <h4>Pricing</h4>
+                <p>At Brink's Piano Works our prices are non negotiable, and subject to change, based on many factors including the condition of one's piano.</p>
+                <p>We also charge per km, outside of my area. The price is firm, to drop the cost, line up more pianos so the travel bill can be split between more people. </p>
             </div>
             <form class="mt-10" netlify netlify-honeypot="bot-field">
                 <div class="hidden">

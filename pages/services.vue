@@ -15,14 +15,16 @@
                     </p>
                     <h4>Pricing</h4>
                     <p>
-                        At Brink's Piano Works our prices are non negotiable,
-                        and subject to change, based on many factors including
-                        the condition of one's piano.
+                        At Brink's Piano Works our prices are subject to change,
+                        based on many factors including the condition of one's
+                        piano.
                     </p>
                     <p>
-                        We also charge per km, outside of my area. The price is
-                        firm, to drop the cost, line up more pianos so the
-                        travel bill can be split between more people.
+                        I charge to travel by the kilometer, outside of my area.
+                        The price is firm, but it doesn’t go up. I try to line
+                        up more pianos in that area, so the travel bill can be
+                        split between more people. Making it more cost effective
+                        for everyone.
                     </p>
                 </div>
             </Container>

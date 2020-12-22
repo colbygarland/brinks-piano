@@ -52,6 +52,18 @@
                     />
                 </div>
                 <div class="mb-6">
+                    <label class="font-bold text-sm block mb-1" for="address"
+                        >Physical Address</label
+                    >
+                    <input
+                        placeholder="12345 123 Street, Grande Prairie, AB"
+                        id="address"
+                        name="address"
+                        type="text"
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    />
+                </div>
+                <div class="mb-6">
                     <label class="font-bold text-sm block mb-1" for="message"
                         >Message<span class="text-red-600">*</span></label
                     >
